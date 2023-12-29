@@ -1,17 +1,17 @@
 # Site settings
-title:          Tale
+title:          El Canal de Datos
 description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+baseurl:        "/"
+url:            "https://www.elcanaldedatos.com"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Julio Suriano
+  url:          https://www.elcanaldedatos.com
+  email:        elcanaldedatos@gmail.com
 
 # Build settings
 markdown:       kramdown
