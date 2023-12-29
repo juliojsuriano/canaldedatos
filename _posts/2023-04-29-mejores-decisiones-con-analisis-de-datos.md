@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mejores Decisiones con el Analisis de Datos
+title: Mejores Decisiones Con Análisis De Datos
 author: Julio
 tags: analisis-de-datos
 excerpt_separator: <!--more-->
@@ -8,11 +8,11 @@ excerpt_separator: <!--more-->
 
 <!--more-->
 
-## Que es el Analisis de Datos?
+## Que Es El Analisis De Datos?
 
 ## Analisis Descriptivo
 
-## Analisis de Diagnostico
+## Analisis De Diagnostico
 
 ## Analisis Predictivo
 
