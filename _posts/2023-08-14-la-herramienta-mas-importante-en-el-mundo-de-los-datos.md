@@ -1,6 +1,6 @@
 ---
 layout: post
-title: La Herramienta Más Importante En El Mundo De Los Datos
+title: La Herramienta más Importante en el Mundo de los Datos
 author: Julio
 tags: sql
 excerpt_separator: <!--more-->
