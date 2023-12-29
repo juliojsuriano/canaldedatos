@@ -4,7 +4,7 @@ layout: default
 
 <div class="post">
   <div class="post-info">
-    <span>Written by</span>
+    <span>Escrito por</span>
     {% if page.author %}
         {{ page.author }}
     {% else %}
@@ -13,7 +13,10 @@ layout: default
 
     {% if page.date %}
       <br>
-      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+        {% assign mes_index = page.date | date: "%-m" | minus: 1 %}
+        {% assign mes = site.data.spanish.meses[mes_index] %}
+    
+        <span>el&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%-d" }} de {{ mes }} del {{ page.date | date: "%Y" }}</time>
     {% endif %}
   </div>
 
@@ -29,11 +32,11 @@ layout: default
 
 <div class="pagination">
   {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+    <a href="{{ page.next.url | prepend: / }}" class="left arrow">&#8592;</a>
   {% endif %}
   {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+    <a href="{{ page.previous.url | prepend: / }}" class="right arrow">&#8594;</a>
   {% endif %}
 
-  <a href="#" class="top">Top</a>
+  <a href="#" class="top">Subir</a>
 </div>

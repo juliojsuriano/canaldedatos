@@ -1,9 +1,13 @@
-<a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+<a href="{{ post.url | prepend: / }}" class="catalogue-item">
   <div>
     {% if include.sticky == 'true' %}
     <span class="catalogue-pinned">Pinned &middot;</span>
     {% endif %}
-    <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
+    {% if post.date %}
+        {% assign mes_index = post.date | date: "%-m" | minus: 1 %}
+        {% assign mes = site.data.spanish.meses[mes_index] %}
+        <time datetime="{{ post.date }}" class="catalogue-time">{{ mes | capitalize }} {{ post.date | date: "%-d" }}, {{ post.date | date: "%Y" }}</time>
+    {% endif %}
     <h1 class="catalogue-title">{{ post.title }}</h1>
     <div class="catalogue-line"></div>
 
