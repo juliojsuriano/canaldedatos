@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mejores Decisiones Con Análisis De Datos
+title: Mejores Decisiones con el Análisis de Datos
 author: Julio
 tags: analisis-de-datos
 excerpt_separator: <!--more-->
